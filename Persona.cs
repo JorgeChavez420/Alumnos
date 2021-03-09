@@ -30,7 +30,8 @@ namespace Alumnos
             this.apellido = apellido;
         }
 
-                public void Presentarse()
+                // virtual - Se puede Overraidear
+                public virtual void Presentarse()
         {
             Console.WriteLine("Hola! Mi nombre es " + this.nombre + this.apellido);
             
