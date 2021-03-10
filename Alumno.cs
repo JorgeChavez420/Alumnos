@@ -4,7 +4,9 @@ namespace Alumnos
 {
     // Alumno hereda de Persona
     // Alumno extiende la clase Persona
-    //Persona es la clase base de Alumno
+    // Persona es la clase base de Alumno
+    // Persona es la clase Padre
+    // Alumno es la clase hija
     class Alumno : Persona
     {
         //(Atributos heredados desde Persona)    
