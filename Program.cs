@@ -64,7 +64,7 @@ namespace Alumnos
             Materia materiaABorrar = null;
             for (int i = 0; i < materiasDeInteres.Count; i++) 
             {
-                if(materiasDeInteres[i].nombre == " Sistemas Interactivos I")
+                if(materiasDeInteres[i].nombre == "Sistemas Interactivos I")
                 {
                     // Encontramos la materia que buscamos 
                     // materiasDeInteres.RemoveAt(i);
@@ -78,8 +78,12 @@ namespace Alumnos
             // verificar si se encontro o no
             if (materiaABorrar != null)
             {
-
+                // Si se encontro 
+                materiasDeInteres.Remove(materiaABorrar);
             }    
+
+            Console.WriteLine("Ahora me interesan " + materiasDeInteres.Count + " materias");
+            Console.WriteLine("Primer materia ahora es: " + materiasDeInteres[0].nombre);
 
         }
     }
